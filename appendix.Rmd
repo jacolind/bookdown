@@ -1,0 +1,27 @@
+# (APPENDIX) Appendix {-}
+
+# First section in appendix 
+
+tood is this shown on the web
+
+# Second section of appendix 
+
+todo can i embed another file? 
+
+<<insertHTML:[test.html]
+
+etc, etc, etc
+
+
+etc etc. 
+
+# 
+
+```
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+```

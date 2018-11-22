@@ -1,0 +1,30 @@
+# embed 
+
+## an html file 
+
+how to embed an html file 
+
+```{r, echo=FALSE}
+htmltools::includeHTML("test.html")
+```
+
+## kontakta oss - signup form
+
+<p>
+Input you email to recieve the document in your inbox as an attachment.
+</p>
+
+<form action="/action_page.php">
+  Input your email:<br>
+  <input type="text" name="email" value="">
+  <br><br>
+  <input type="submit" value="Send document to me">
+</form>
+
+<p>
+You are allowed to print and read the document, but not to change it without first asking us for permission via contact@url.com
+</p>
+
+## internal link 
+
+todo how do i make an internal link so that i can make in the index "contact" and then it redirects to 

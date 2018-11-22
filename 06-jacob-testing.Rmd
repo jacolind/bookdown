@@ -1,0 +1,119 @@
+# jacob testing ch2 bookdown
+
+prövar markdown
+
+## exempel tagna ur ch2 components. 
+
+### 
+
+vi testar subscript H~2O och superscript Fe^2+^.
+
+### footer 
+
+infogar en fotnot [^fot1].
+
+### math 
+
+[^fot1]: här kommer text i fotnoten. 
+
+math infline $\exp{1+1} = y$ och centrerat 
+$$
+\begin{equation}
+  \pi / 2.
+  (\#eq:ettan)
+\end{equation}
+$$
+
+vi reffar ekvation \@ref(eq:ettan) med ett helt ok syntax. men den syns inte. 
+
+### theorems proofs definitions 
+
+```{theorem, label="LLN", name="law of large numbers"}
+according to LLN this will happen and it is connected to CLT.
+```
+
+
+```{proof}
+the proof of LLN goes as follows. the proof of LLN goes as follows. the proof of LLN goes as follows. the proof of LLN goes as follows. the proof of LLN goes as follows. the proof of LLN goes as follows. the proof of LLN goes as follows. the proof of LLN 
+
+the proof of LLN goes as follows. the proof of LLN goes as follows. the proof of LLN goes as follows. the proof of LLN goes as follows. 
+```
+
+theorem \@ref(thm:LLN) is powerful to use. so it defitions:
+
+```{definition, money}
+money is whatever is used as a payment mechanism. it is defined in terms of the functions it performs. 
+```
+
+from definition \@ref(def:money) we learn that anything can be used as money. reffa def funkar ju inte. 
+
+### parts 
+
+```
+# (PART) namnet {-}
+
+# chaper one 
+
+# chapter two
+```
+
+viktigt att inkludera `{-}`.
+
+### include_graphics 
+
+using `knitr::include_graphics()`.
+
+```{r, logo, echo=FALSE}
+library(knitr)
+include_graphics("amazonlogo.png")
+```
+
+### images side by side 
+
+todo gör det med inclyude graphics 
+
+par(mar = c(4,4,0.1,0.1))
+eller mfrow
+
+### tables 
+
+see ch 2 
+
+Table: (\#iristable) Caption goes here for the table.
+
+```{r, label="iris", echo=FALSE}
+kable(head(mtcars), 
+      # caption = "Here is a caption written inside the kable function"
+      )
+```
+
+we refer to table \@(tab:iristable) like so or \@(iristable). tood ref tbale funka rinte. 
+
+### output formats 
+
+todo e3 lek runt med olika output format.
+
+
+### github 
+
+todo addera till min git.
+
+## ch 3 
+
+### toc 
+
+prövat 
+
+    toc:
+      collapse: section
+
+och 
+
+    toc_depth: 2
+
+och 
+
+    toc:
+      depth: 2
+      
+men får ej den effekt jag vill. 

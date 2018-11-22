@@ -1,0 +1,84 @@
+# shiny 
+
+## html 
+
+first a html widget. 
+
+todo 
+
+
+## table 
+
+```{r dt-1}
+library(DT)
+DT::datatable(iris)
+```
+
+## dygraphs
+
+```{r dygraph-1}
+library(dygraphs)
+lungDeaths <- cbind(mdeaths, fdeaths)
+dygraph(lungDeaths)
+```
+
+
+## diagram 
+
+```{r diagram-1}
+library(DiagrammeR)
+grViz("
+  digraph {
+    layout = twopi
+    node [shape = circle]
+    A -> {B C D} 
+  }")
+```
+
+```{r diagram-2}
+boxes_and_circles <- "
+digraph boxes_and_circles {
+
+  # several 'node' statements
+  node [shape = box,
+        fontname = Helvetica]
+    A; B; C; D; E; F
+
+  node [shape = circle,
+        fixedsize = true,
+        width = 0.9] // sets as circles
+    1; 2; 3; 4; 5; 6; 7; 8
+
+  # several 'edge' statements
+    A->1; B->2; B->3; B->4; C->A
+    1->D; E->A; 2->4; 1->5; 1->F
+    E->6; 4->6; 5->7; 6->7; 3->8
+
+  # a 'graph' statement
+  graph [overlap = true, fontsize = 10]
+}
+"
+
+grViz(boxes_and_circles)
+```
+
+## maps 
+
+```{r}
+library(leaflet)
+
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+m  # Print the map
+```
+
+
+## shiny 
+
+then a shiny app 
+
+```{r shiny-1}
+knitr::include_app("https://yihui.shinyapps.io/miniUI/", height = "600px")
+```
+

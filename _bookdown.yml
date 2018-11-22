@@ -1,0 +1,13 @@
+title: "A Minimal Book Example"
+author: "Yihui Xie"
+date: "`r Sys.Date()`"
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+github-repo: jacolind/bookdown
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+cover-image: amazonlogo.png
+link-citations: yes
+site: bookdown::bookdown_site
+output:
+    bookdown::gitbook

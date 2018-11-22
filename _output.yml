@@ -1,0 +1,15 @@
+bookdown::gitbook:
+  css: style.css
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><a href="http://google.com">www.google.com</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown"
+        target="blank">Subscribe to newsletter.</a></li>
+    download: ["pdf", "epub", "mobi"]
+    sharing:
+      twitter: no
+      facebook: no
+      all: ['twitter', 'facebook', 'email']

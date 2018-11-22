@@ -1,0 +1,11 @@
+# (PART) Diving into details {-}
+
+# Diving into details {-}
+
+if i want text under the "part" i need to put it here. it makes sense to do it with html. i do not know if it will look reasonable in latex. 
+
+one way might be to just use `# (PART) {-}` and leave it empty, or do `# (PART) One {-}` then Two then Three. super simple. 
+
+# Methods
+
+We describe our methods in this chapter.

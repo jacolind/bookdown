@@ -1,0 +1,44 @@
+---
+title: "A Book"
+author: "Frida Gomam"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook: default
+#bookdown::pdf_book: default
+---
+
+
+
+# Hello World
+
+Hi.
+
+Bye.
+
+https://github.com/yihui/bookdown-minimal
+
+# heading 2 
+
+=INDEX(Tabeller!BA:BA, MATCH(B106, Tabeller!AZ:AZ, 0))
+maturty på strukt
+=BDP(B106&" ISIN", "MATURITY")
+kurs på strukt är
+=BDH(B106&" ISIN", "PX_BID", vdate, vdate)
+
+## heading 2.1 
+
+=INDEX(Tabeller!BA:BA, MATCH(B106, Tabeller!AZ:AZ, 0))
+maturty på strukt
+=BDP(B106&" ISIN", "MATURITY")
+kurs på strukt är
+=BDH(B106&" ISIN", "PX_BID", vdate, vdate)
+
+## heading 2.2
+
+=INDEX(Tabeller!BA:BA, MATCH(B106, Tabeller!AZ:AZ, 0))
+maturty på strukt
+=BDP(B106&" ISIN", "MATURITY")
+kurs på strukt är
+=BDH(B106&" ISIN", "PX_BID", vdate, vdate)
+
